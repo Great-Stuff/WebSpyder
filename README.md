@@ -1,6 +1,7 @@
 # PyScrape
 
 <strong>What is PyScrape:</strong>
+
 PyScrape is a simple webscraper made in Python using the BeautifulSoup4 library
 
 
