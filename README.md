@@ -7,5 +7,3 @@ When you open PyScrape, you will be prompted to enter a website. This is the sit
 <strong>Output:</strong>
 
 After you enter all the parameters that you wish to input, you will be prompted to choose a directory to save your output. The output will be saved as a txt file with commas separating the different elements.
-
-<strong>Instructions for use:</strong>
