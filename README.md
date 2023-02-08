@@ -1,4 +1,8 @@
-# PyScrape: a terminal based web scraper made in Python using bs4
+# PyScrape
+
+<strong>What is PyScrape:</strong>
+PyScrape is a simple webscraper made in Python using the BeautifulSoup4 library
+
 
 <strong>Instructions for use:</strong>
 
