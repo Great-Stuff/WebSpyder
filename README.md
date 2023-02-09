@@ -34,3 +34,11 @@ pip install colorama
 ```poweshell
 pip install tkinter
 ```
+
+<strong>Images: </strong>
+
+<img src="pictures/Site Example.png" alt="Website with inspect console open">
+
+<img src="pictures/Web Scrape Example.jpg" alt="PyScrape console axample">
+
+<img src="pictures/Output Example.png" alt="Content of the div of the website">
