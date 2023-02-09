@@ -12,3 +12,25 @@ When you open PyScrape, you will be prompted to enter a website. This is the sit
 <strong>Output:</strong>
 
 After you enter all the parameters that you wish to input, you will be prompted to choose a directory to save your output. The output will be saved as a txt file with commas separating the different elements.
+
+<strong>Libraries:</strong>
+
+the libraries that PyScrape uses are `requests`, `datetime`, `time`, `bs4`, `colorama`, `tkinter`. You can install these using the `pip` command 
+```poweshell
+pip install requests
+```
+```poweshell
+pip install datetime
+```
+```poweshell
+pip install time
+```
+```poweshell
+pip install bs4
+```
+```poweshell
+pip install colorama
+```
+```poweshell
+pip install tkinter
+```
