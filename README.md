@@ -42,11 +42,3 @@ pip install tkinter
 <img src="pictures/Web Scrape Example.jpg" alt="PyScrape console axample">
 
 <img src="pictures/Output Example.png" alt="Content of the div of the website">
-
-<strong>Icons: </strong>
-
-<img src="assets/PyScrape Logo Upscaled.jpg" alt="Content of the div of the website">
-
-<img src="assets/PyScrape Logo Black.png" alt="Content of the div of the website">
-
-<img src="assets/PyScrape Logo Black.ico" alt="Content of the div of the website">
