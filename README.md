@@ -1,36 +1,14 @@
-# PyScrape
+<h1>PyScrape</h1>
 
-<strong>What is PyScrape:</strong>
+<h3>About</h3>
+A Python program to scrape HTML pages, written in Python 3.11.0 using Tkinter GUI, Requests library and Beautiful Soup. This program allows users to extract information from HTML pages and save them to a text file. Users can specify the HTML element, id, class, or string that they want to extract from a webpage. The extracted information will be saved as a string in a text file with a timestamp.
 
-PyScrape is a simple webscraper made in Python using the BeautifulSoup4 library
+<h3>Usage</h3>
+A graphical user interface (GUI) will appear, where users can enter the URL of the webpage they want to scrape and the HTML element, id, class, or string that they want to extract. After entering the desired information, users can click the "Scrape" button to scrape the webpage and save the results to a text file. The program will prompt users to select a directory where the file will be saved. If no parameters are entered then the txt file will contain the entire html document.
 
+<h3>Contributing</h3>
 
-<strong>Instructions for use:</strong>
+Contributions to PyScrape are welcome! If you find a bug or have a feature request, please <a href="https://github.com/Great-Stuff/PyScrape/issues">open in issue</a> on the GitHub page. If you would like to contribute code, please fork the repository and create a pull request with your changes.
 
-When you open PyScrape, you will be prompted to enter a website. This is the site you will scrape. Next, you will have four options: HTML tag, ID, class, and text. All of these options are optional, and leaving them all blank will result in the entire site being returned. When you enter an HTML tag, it will return all elements with that tag and its children. An ID will return the element with the given ID and its children. A class will return all elements with that class name and its children. If you enter more than one parameter, it will return only the elements that meet all the criteria.
-
-<strong>Output:</strong>
-
-After you enter all the parameters that you wish to input, you will be prompted to choose a directory to save your output. The output will be saved as a txt file with commas separating the different elements.
-
-<strong>Libraries:</strong>
-
-the libraries that PyScrape uses are `requests`, `datetime`, `time`, `bs4`, `colorama`, `tkinter`. You can install these using the `pip` command 
-```poweshell
-pip install requests
-```
-```poweshell
-pip install datetime
-```
-```poweshell
-pip install time
-```
-```poweshell
-pip install bs4
-```
-```poweshell
-pip install colorama
-```
-```poweshell
-pip install tkinter
-```
+<h3>Author</h3>
+PyScrape was created by <a href="https://github.com/Great-Stuff">@Great-Stuff</a> on GitHub.
