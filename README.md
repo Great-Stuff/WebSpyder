@@ -12,3 +12,5 @@ Contributions to PyScrape are welcome! If you find a bug or have a feature reque
 
 <h3>Author</h3>
 PyScrape was created by <a href="https://github.com/Great-Stuff">@Great-Stuff</a> on GitHub.
+
+<h5>If anyone knows how to pull images from a website and use them in tkinter, please let me know in the <code>issues</code> tab with the tag webImages</h5>
