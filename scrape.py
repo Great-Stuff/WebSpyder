@@ -1,7 +1,16 @@
 def main():
     import datetime, requests, webbrowser, tkinter
     from bs4 import BeautifulSoup
-    from tkinter import filedialog
+    from tkinter import filedialog, messagebox
+
+    def internet_on():
+        try:
+            requests.head('https://example.com', timeout=1)
+            return True
+        except requests.ConnectionError: 
+            messagebox.showerror("Connection Error", "PyScrape requires internet to function. Please connect to the internet to use PyScrape")
+
+            return False
 
     def getdata(url):
         # Make a GET request to the URL
@@ -96,6 +105,8 @@ def main():
             siteInput.delete(1.0, "end")
             siteInput.insert(1.0, "Invalid URL")
 
+    internet_on()
+
     window = tkinter.Tk()
     window.title("PyScrape")
     window.resizable(False,False)
@@ -159,6 +170,7 @@ def main():
     fileText = "Submit".center(146, " ")
     fileInput = tkinter.Button(saveFrame, text=fileText, command=parse)
     fileInput.grid(row=0, column=0, sticky="news")
+
 
     window.mainloop()
 
