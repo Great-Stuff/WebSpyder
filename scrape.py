@@ -60,21 +60,25 @@ def main():
                 filePathOut = tkinter.Label(saveFrame, text=f"Your file has been saved to {filePath}", cursor="hand2", wraplength=380)
                 filePathOut.grid(row=1, column=0)
                 filePathOut.bind("<Button-1>", lambda e: openPage(fr"file://{filePath}"))
+    def correctUrl():
+        global siteName
+        siteName = siteInput.get(1.0, "end-1c")
+        if siteName.startswith("https://www.") or siteName.startswith("http://www."):
+            return
+        elif siteName.startswith("www."):
+            siteName = f"http://{siteName}"
+        else:
+            siteName = f"http://www.{siteName}"
     def parse():
         global filePath
-        siteName = siteInput.get(1.0, "end-1c")
+        correctUrl()
         htmlName = htmlInput.get(1.0, "end-1c")
         idName = idInput.get(1.0, "end-1c")
         className = classInput.get(1.0, "end-1c")
         stringName = stringInput.get(1.0, "end-1c")
 
         try:
-            if siteName[0:4] == "https":
-                global htmlData
-                htmlData = getdata(siteName)
-            else:
-                siteName = "https://"+siteName
-                htmlData = getdata(siteName)
+            htmlData = getdata(siteName)
             soup = BeautifulSoup(htmlData, 'html.parser')
 
             item_list = []
@@ -87,7 +91,7 @@ def main():
                 for item in items:
                     item_list.append(item)
                 for tag in soup.find_all():
-                    if tag.name != "html" and tag.name != "body" and tag.name != "head" and tag.name != "title" and stringName in tag.text:
+                    if tag.name != "html" and tag.name != "body" and tag.name != "head" and tag.name != "title" and tag.name != "div" and tag.name != "style" and stringName in tag.text:
                         item_list.append(tag)
 
             filePath = filedialog.askdirectory()
@@ -101,9 +105,10 @@ def main():
                 # Write the list of elements to the file as a string
                 file.write(str(item_list)[2:-2])
 
-        except requests.exceptions.RequestException:
+        except requests.exceptions.RequestException as r:
             siteInput.delete(1.0, "end")
             siteInput.insert(1.0, "Invalid URL")
+            print(r)
 
     internet_on()
 
