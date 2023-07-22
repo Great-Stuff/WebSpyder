@@ -1,4 +1,4 @@
-<h1>PyScrape</h1>
+<h1>GreatScrape</h1>
 
 <h3>About</h3>
 A Python program to scrape HTML pages, written in Python 3.11.0 using Tkinter GUI, Requests library and Beautiful Soup. This program allows users to extract information from HTML pages and save them to a text file. Users can specify the HTML element, id, class, or string that they want to extract from a webpage. The extracted information will be saved as a string in a text file with a timestamp.
